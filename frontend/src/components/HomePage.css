@@ -7,9 +7,18 @@
 
 .header1 {
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
+    color: var(--carolina)
+}
+
+.roundedBox {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 20px;
     background-color: var(--carolina);
-    color: white;
+    box-shadow: 5px 10px #888888;
 }
 
 .default-ram {
@@ -18,4 +27,33 @@
     margin-right: auto;
     width: 300px;
     height: auto;
+}
+
+.ramContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #7eb3df;
+    padding: 1rem 1.75rem;
+    border-radius: 50px;
+    width: fit-content;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    /* position under the bubble */
+    left: 40px;
+    /* adjust to point where you want */
+    border-width: 20px 20px 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
 }
