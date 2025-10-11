@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage';
 import Find from './components/Find'
 import './App.css'
@@ -6,10 +6,13 @@ import './App.css'
 function App() {
   return (
     <>
-      <Routes>
-        <Route path ="/" element = {<HomePage />} />
-        <Route path ="/find" element = {<Find />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path ="/" element = {<HomePage />} />
+          <Route path ="/find" element = {<Find />} />
+        </Routes>
+      </BrowserRouter>
+
       <div>
         <a href="http://localhost:5173/" name = "Start game"/>
       </div>
