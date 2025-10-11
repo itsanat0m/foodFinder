@@ -1,4 +1,5 @@
 import QuestionBox from "./QuestionBox";
+import './HomePage.css';
 
 const HomePage = () => {
   return (
