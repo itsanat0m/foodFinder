@@ -10,11 +10,12 @@ export const qData = [
                 <AnswerBox answer={"Family"}  nextQuestion={3} tags={[]} />,
                 <AnswerBox answer={"Couple"}  nextQuestion={2} tags={[]} />,
                 <AnswerBox answer={"Other"}  nextQuestion={3} tags={[]} />,
+
         ],
     },
     {
 
-        "id": "COUPLE Question 1",
+        "id": "COUPLE Question 1 (2)",
         "Q": "You must promise to go where I say",
         "Answers": [
                 <AnswerBox answer={"I promise"} nextQuestion={2} />,
@@ -33,7 +34,7 @@ export const qData = [
         ],
     },
     {
-
+        //TODO: Figure out how we want to do Timing with opening hours
         "id": "GEN Question 3", // Meal question needs implement a tag,
         "Q": "Which meal do you want?",
         "Answers": [
@@ -53,8 +54,61 @@ export const qData = [
                 <AnswerBox answer={"Lunch"} />,
                 <AnswerBox answer={"Dinner"} />,
                 <AnswerBox answer={"Late Night"} />,
-
         ],
+    },
+    {
+        "id": "BREAK Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={"Brunch"} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "LUNCH Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"Mediteranian"} />
+                <AnswerBox answer={"Asian"} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "DINNER Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "LATE Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+        ),
     }
 ]
 
