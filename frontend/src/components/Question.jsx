@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { cloneElement } from "react";
 
 
 function Question({ question, answers, passA, passAM, type }) {
@@ -20,7 +21,8 @@ function Question({ question, answers, passA, passAM, type }) {
             <>
                 <h1>{question}</h1>
                 <div>
-                    {answers}
+                    {answers.map(answer => cloneElement(answer, {handleMultiData}) ) 
+                    }
                 </div>
                 <button onClick={handleClick}>Submit</button>
             </>
@@ -30,7 +32,7 @@ function Question({ question, answers, passA, passAM, type }) {
     <>
         <h1>{question}</h1>
         <div>
-            {answers}
+            {answers.map(answer => cloneElement(answer, {handleData}) )}
         </div>
     </>
     );

@@ -1,4 +1,4 @@
-
+import QuestionBox from "./QuestionBox";
 
 const HomePage = () => {
   return (

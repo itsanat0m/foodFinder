@@ -5,11 +5,11 @@ export const qData = [
         "id": "GEN Question 1",
         "Q": "Who's eating?",
         "Answers": [
-            <AnswerBox answer={"Just Me"} />,
-            <AnswerBox answer={"Friends"} />,
-            <AnswerBox answer={"Family"} />,
-            <AnswerBox answer={"Couple"} />,
-            <AnswerBox answer={"Other"} />,
+                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 2"} tags={[]} />,
+                <AnswerBox answer={"Friends"} nextQuestion={3} tags={[]} />,
+                <AnswerBox answer={"Family"}  nextQuestion={3} tags={[]} />,
+                <AnswerBox answer={"Couple"}  nextQuestion={2} tags={[]} />,
+                <AnswerBox answer={"Other"}  nextQuestion={3} tags={[]} />,
 
         ],
     },
@@ -17,42 +17,46 @@ export const qData = [
 
         "id": "COUPLE Question 1 (2)",
         "Q": "You must promise to go where I say",
-        "Answers": (
-            <div>
-                <AnswerBox answer={"I promise"} nextQuestion={2} sendData={handleData} />
-                <AnswerBox answer={"Mmm can't say for sure"} />
-            </div>
-        ),
+        "Answers": [
+                <AnswerBox answer={"I promise"} nextQuestion={2} />,
+                <AnswerBox answer={"Mmm can't say for sure"} />,
+        ],
     },
     {
 
         "id": "GEN Question 2", // Budget question needs implement a tag, 
         "Q": "Budget per person?",
-        "Answers": (
-            <div>
-                <AnswerBox answer={"<$10"} nextQuestion={2} sendData={handleData} />
-                <AnswerBox answer={"$10 - $15"} />
-                <AnswerBox answer={"$15 - $25"} />
+        "Answers": [
+                <AnswerBox answer={"<$10"} nextQuestion={2}  />,
+                <AnswerBox answer={"$10 - $15"} />,
+                <AnswerBox answer={"$15 - $25"} />,
                 <AnswerBox answer={"+$30"} />
-            </div>
-        ),
+        ],
     },
     {
         //TODO: Figure out how we want to do Timing with opening hours
         "id": "GEN Question 3", // Meal question needs implement a tag,
         "Q": "Which meal do you want?",
-        "Answers": (
-            <div>
-                <AnswerBox answer={"Breakfast"} nextQuestion={2} sendData={handleData} />
-                <AnswerBox answer={"Lunch"} />
-                <AnswerBox answer={"Dinner"} />
+        "Answers": [
+                <AnswerBox answer={"Breakfast"} />,
+                <AnswerBox answer={"Lunch"} />,
+                <AnswerBox answer={"Dinner"} />,
                 <AnswerBox answer={"Late Night"} />
-            </div>
 
-        ),
+        ],
     },
     {
 
+        "id": "GEN Question 4",
+        "Q": "Distance willing to travel?",
+        "Answers": [
+                <AnswerBox answer={"Walking only (<10 minutes)"} />,
+                <AnswerBox answer={"Lunch"} />,
+                <AnswerBox answer={"Dinner"} />,
+                <AnswerBox answer={"Late Night"} />,
+        ],
+    },
+    {
         "id": "BREAK Question 1",
         "Q": "Cuisine in mind?",
         "Answers": (
@@ -104,7 +108,6 @@ export const qData = [
                 <AnswerBox answer={""} />
                 <AnswerBox answer={"I don't know"} />
             </div>
-
         ),
     }
 ]
