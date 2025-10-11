@@ -6,6 +6,7 @@ function Find() {
             <h1>
             Start of game
             </h1>
+            <QuestionBox />
         </>
     );
 }

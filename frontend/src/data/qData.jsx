@@ -5,7 +5,7 @@ export const qData = [
         "id": "GEN Question 1",
         "Q": "Who's eating?",
         "Answers": [
-                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 2"} tags={[]} />,
+                <AnswerBox answer={"Just Me"} nextQuestion={"Send to display"} tags={["burger"]} />,
                 <AnswerBox answer={"Friends"} nextQuestion={3} tags={[]} />,
                 <AnswerBox answer={"Family"}  nextQuestion={3} tags={[]} />,
                 <AnswerBox answer={"Couple"}  nextQuestion={2} tags={[]} />,
