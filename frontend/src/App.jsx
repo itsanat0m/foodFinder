@@ -12,10 +12,6 @@ function App() {
           <Route path ="/find" element = {<Find />} />
         </Routes>
       </BrowserRouter>
-
-      <div>
-        <a href="http://localhost:5173/" name = "Start game"/>
-      </div>
     </>
   )
 }
