@@ -3,7 +3,7 @@ import QuestionBox from "./QuestionBox";
 const HomePage = () => {
   return (
     <>
-      <div>
+      <div id="header1">
         <header>
           <h1>Welcome to Food Finder</h1>
         </header>

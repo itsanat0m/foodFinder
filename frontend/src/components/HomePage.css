@@ -1,0 +1,13 @@
+/* homepage.css */
+.homepage {
+    /* CSS variables or page-wide tokens */
+    --hero-max: 1200px;
+    --carolina: #4b9cd3;
+}
+
+.header1 {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--carolina);
+    color: white;
+}
