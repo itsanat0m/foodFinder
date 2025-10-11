@@ -40,7 +40,7 @@ export const qData = [
         ),
     },
     {
-
+        //TODO: Figure out how we want to do Timing with opening hours
         "id": "GEN Question 3", // Meal question needs implement a tag,
         "Q": "Which meal do you want?",
         "Answers": (
@@ -55,14 +55,14 @@ export const qData = [
     },
     {
 
-        "id": "GEN Question 4",
-        "Q": "Distance willing to travel?",
+        "id": "GEN Question 5",
+        "Q": "Cuising in mind?",
         "Answers": (
             <div>
                 <AnswerBox answer={"Walking only (<10 minutes)"} />
-                <AnswerBox answer={"Lunch"} />
-                <AnswerBox answer={"Dinner"} />
-                <AnswerBox answer={"Late Night"} />
+                <AnswerBox answer={"Mediteranian"} />
+                <AnswerBox answer={"Asian"} />
+                <AnswerBox answer={"I don't know"} />
             </div>
 
         ),
