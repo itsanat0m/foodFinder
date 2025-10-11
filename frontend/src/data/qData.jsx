@@ -1,8 +1,8 @@
 import AnswerBox from "../components/AnswerBox"
 
-const qData = [
+export const qData = [
     {
-        "id": "Question 1",
+        "id": "GEN Question 1",
         "Q": "Who's eating?",
         "Answers": (
             <div>
@@ -14,9 +14,22 @@ const qData = [
 
             </div>
         ),
+    },
+    {
 
-        "id": "Couple Q1",
+        "id": "COUPLE Question 1",
         "Q": "You must promise to go where I say",
+        "Answers": (
+            <div>
+                <AnswerBox answer={"I promise"} nextQuestion={2} sendData={handleData} />
+                <AnswerBox answer={"Mmm can't say for sure"} />
+            </div>
+        ),
+    },
+    {
+
+        "id": "GEN Question 2",
+        "Q": "What's your budget?",
         "Answers": (
             <div>
                 <AnswerBox answer={"I promise"} nextQuestion={2} sendData={handleData} />
