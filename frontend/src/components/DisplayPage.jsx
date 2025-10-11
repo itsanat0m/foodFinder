@@ -40,3 +40,5 @@ function DisplayPage() {
     )
 
 }
+
+export default DisplayPage;
