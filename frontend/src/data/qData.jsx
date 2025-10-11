@@ -28,13 +28,29 @@ export const qData = [
     },
     {
 
-        "id": "GEN Question 2",
-        "Q": "What's your budget?",
+        "id": "GEN Question 2", // Budget question needs implement a tag, 
+        "Q": "Budget per person?",
         "Answers": (
             <div>
-                <AnswerBox answer={"I promise"} nextQuestion={2} sendData={handleData} />
-                <AnswerBox answer={"Mmm can't say for sure"} />
+                <AnswerBox answer={"<$10"} nextQuestion={2} sendData={handleData} />
+                <AnswerBox answer={"$10 - $15"} />
+                <AnswerBox answer={"$15 - $25"} />
+                <AnswerBox answer={"+$30"} />
             </div>
+        ),
+    },
+    {
+
+        "id": "GEN Question 3", // Meal question needs implement a tag,
+        "Q": "Which meal do you want?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={"Breakfast"} />
+                <AnswerBox answer={"Lunch"} />
+                <AnswerBox answer={"Dinner"} />
+                <AnswerBox answer={"Late Night"} />
+            </div>
+
         ),
     }
 ]

@@ -13,9 +13,6 @@ function App() {
       <div>
         <Homepage />
       </div>
-      <div>
-        <QuestionBox />
-      </div>
     </>
   )
 }
