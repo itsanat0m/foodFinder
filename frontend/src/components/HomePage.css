@@ -11,3 +11,11 @@
     background-color: var(--carolina);
     color: white;
 }
+
+.default-ram {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+}
