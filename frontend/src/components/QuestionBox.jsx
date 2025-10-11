@@ -4,8 +4,8 @@ import qData from '../data/qData';
 
 
 function QuestionBox() {
-    const [qNum, setQNum] = useState(0);
-    const selectedQ = qData[qNum];
+    const [qNum, setQNum] = useState("GEN Question 1");
+    const selectedQ = qData.find(question => question.id == qNum);
     const [userTags, setUserTags] = useState([]);
     function handleChange(tags, num) {
         setQNum(num);
@@ -18,7 +18,6 @@ function QuestionBox() {
 
     return (
         <>
-        <img>Placeholder</img>
         <Question question={selectedQ.Q} answers={selectedQ.Answers} passA={handleChange} passAM={handleMultiChange} type={selectedQ.Type}/>
         </>
     )

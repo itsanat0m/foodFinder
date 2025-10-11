@@ -1,4 +1,4 @@
-
+import QuestionBox from "./QuestionBox";
 
 const HomePage = () => {
   return (
@@ -16,6 +16,7 @@ const HomePage = () => {
              <p>
                 Edit <code>src/App.jsx</code> and save to test HMR
              </p>
+             <QuestionBox />
         </div>
     </>
   );

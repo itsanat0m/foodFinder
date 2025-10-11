@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 
-function AnswerBox({answer, nextQuestion,tags, sendData}) {
+function AnswerBox({answer, nextQuestion,tags, handleData}) {
 
     const handleClick = () => {
-        sendData(nextQuestion, tags);
+        handleData(nextQuestion, tags);
     }
 
     return (
