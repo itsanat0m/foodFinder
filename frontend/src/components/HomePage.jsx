@@ -1,5 +1,6 @@
 import QuestionBox from "./QuestionBox";
 import './HomePage.css';
+import { BrowserRouter, Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -13,9 +14,11 @@ const HomePage = () => {
           </img>
           <p>Don't know where to eat? Chef Rami has got you covered</p>
         </main>
-        <button>
-          Click to Start!
-        </button>
+          <Link to="/Find">
+            <button>
+              Start Search!
+            </button>
+          </Link>
       </div>
     </>
   );
