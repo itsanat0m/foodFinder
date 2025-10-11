@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function answerBox({answer, nextQuestion, sendData}) {
+function AnswerBox({answer, nextQuestion, sendData}) {
     const [data, setData] = useState(nextQuestion);
 
     const handleClick = () => {
@@ -16,3 +16,5 @@ function answerBox({answer, nextQuestion, sendData}) {
         </div>
     );
 }
+
+export default AnswerBox;
