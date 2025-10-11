@@ -2,13 +2,10 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 
-function Question({question, answers}) {
-    const [visible, setVisible] = useState(false);
-    const [nextQuestion, setNextQuestion] = useState(""); 
+function Question({question, answers, passA}) {
 
-    function handleData(data) {
-        setNextQuestion(data);
-        
+    function handleData(num) {
+        passA(num)
     }
 
     return (
@@ -20,3 +17,5 @@ function Question({question, answers}) {
         </>
     )
 }
+
+export default Question;

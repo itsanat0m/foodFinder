@@ -12,3 +12,5 @@ const qData = [
         )
     }
 ]
+
+export default qData;
