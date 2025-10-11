@@ -1,5 +1,6 @@
 import QuestionBox from "./QuestionBox";
 import './HomePage.css';
+import { BrowserRouter, Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -19,12 +20,11 @@ const HomePage = () => {
             </img>
           </div>
         </main>
-        <button>
-          Click to Start!
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+          <Link to="/Find">
+            <button>
+              Start Search!
+            </button>
+          </Link>
       </div>
     </>
   );

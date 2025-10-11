@@ -29,6 +29,7 @@
     height: auto;
 }
 
+<<<<<<< HEAD
 .ramContainer {
     display: flex;
     align-items: center;
@@ -57,3 +58,5 @@
     border-color: white transparent transparent transparent;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
 }
+=======
+>>>>>>> ca871cb33947da522063d3472e5ff6e4164a5206
