@@ -4,3 +4,7 @@ const [playerState, setPlayerState] = useState({
     time: null,
     distance: null
 });
+
+function addTag(partial) {
+    setPlayerState(prev => ({ ...prev, ...partial }));
+}

@@ -52,6 +52,20 @@ export const qData = [
             </div>
 
         ),
+    },
+    {
+
+        "id": "GEN Question 4",
+        "Q": "Distance willing to travel?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={"Walking only (<10 minutes)"} />
+                <AnswerBox answer={"Lunch"} />
+                <AnswerBox answer={"Dinner"} />
+                <AnswerBox answer={"Late Night"} />
+            </div>
+
+        ),
     }
 ]
 
