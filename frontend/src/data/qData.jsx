@@ -4,20 +4,18 @@ export const qData = [
     {
         "id": "GEN Question 1",
         "Q": "Who's eating?",
-        "Answers": (
-            <div>
-                <AnswerBox answer={"Just Me"} nextQuestion={2} sendData={handleData} />
-                <AnswerBox answer={"Friends"} />
-                <AnswerBox answer={"Family"} />
-                <AnswerBox answer={"Couple"} />
-                <AnswerBox answer={"Other"} />
+        "Answers": [
+            <AnswerBox answer={"Just Me"} />,
+            <AnswerBox answer={"Friends"} />,
+            <AnswerBox answer={"Family"} />,
+            <AnswerBox answer={"Couple"} />,
+            <AnswerBox answer={"Other"} />,
 
-            </div>
-        ),
+        ],
     },
     {
 
-        "id": "COUPLE Question 1",
+        "id": "COUPLE Question 1 (2)",
         "Q": "You must promise to go where I say",
         "Answers": (
             <div>
@@ -45,7 +43,7 @@ export const qData = [
         "Q": "Which meal do you want?",
         "Answers": (
             <div>
-                <AnswerBox answer={"Breakfast"} />
+                <AnswerBox answer={"Breakfast"} nextQuestion={2} sendData={handleData} />
                 <AnswerBox answer={"Lunch"} />
                 <AnswerBox answer={"Dinner"} />
                 <AnswerBox answer={"Late Night"} />
@@ -55,13 +53,55 @@ export const qData = [
     },
     {
 
-        "id": "GEN Question 5",
-        "Q": "Cuising in mind?",
+        "id": "BREAK Question 1",
+        "Q": "Cuisine in mind?",
         "Answers": (
             <div>
-                <AnswerBox answer={"Walking only (<10 minutes)"} />
+                <AnswerBox answer={"Brunch"} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "LUNCH Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
                 <AnswerBox answer={"Mediteranian"} />
                 <AnswerBox answer={"Asian"} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "DINNER Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={"I don't know"} />
+            </div>
+
+        ),
+    },
+    {
+
+        "id": "LATE Question 1",
+        "Q": "Cuisine in mind?",
+        "Answers": (
+            <div>
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
+                <AnswerBox answer={""} />
                 <AnswerBox answer={"I don't know"} />
             </div>
 
