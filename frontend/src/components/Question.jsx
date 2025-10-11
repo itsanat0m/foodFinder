@@ -1,8 +1,7 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 
 
-function Question({question, answers, passA}) {
+function Question({ question, answers, passA }) {
 
     function handleData(num) {
         passA(num)

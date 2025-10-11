@@ -11,7 +11,10 @@ function App() {
   return (
     <>
       <div>
-        <Homepage/> 
+        <Homepage />
+      </div>
+      <div>
+        <QuestionBox />
       </div>
     </>
   )
