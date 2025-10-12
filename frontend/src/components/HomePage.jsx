@@ -21,7 +21,7 @@ const HomePage = () => {
             </div>
           </div>
         </main>
-        <Link to="/find">
+        <Link to="/Find">
           <button>
             Start Search!
           </button>
