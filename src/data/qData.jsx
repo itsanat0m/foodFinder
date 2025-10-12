@@ -6,11 +6,11 @@ export const qData = [
         "Q": "Who's eating?",
         "type": "single",
         "Answers": [
-                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 2"} tags={["sushi"]} />,
-                <AnswerBox answer={"Friends"} nextQuestion={3} tags={[]} />,
-                <AnswerBox answer={"Family"}  nextQuestion={3} tags={[]} />,
-                <AnswerBox answer={"Couple"}  nextQuestion={2} tags={[]} />,
-                <AnswerBox answer={"Other"}  nextQuestion={3} tags={[]} />,
+                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 2"} tags={["single"]} />,
+                <AnswerBox answer={"Friends"} nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Family"}  nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Couple"}  nextQuestion={"COUPLE Question 1"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Other"}  nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
 
         ],
     },
@@ -22,18 +22,6 @@ export const qData = [
         "Answers": [
                 <AnswerBox answer={"I promise"} nextQuestion={"GEN Question 2"} tags={[""]}/>,
                 <AnswerBox answer={"Mmm can't say for sure"} nextQuestion={"try again"} tags={[""]}/>,
-        ],
-    },
-    {
-
-        "id": "GEN Question 2", // Budget question needs implement a tag, 
-        "Q": "What is your Budget?",
-        "type": "single",
-        "Answers": [
-                <AnswerBox answer={"<$10"} nextQuestion={"GEN Question 3"} tags={["<10"]}  />,
-                <AnswerBox answer={"$10 - $15"} />,
-                <AnswerBox answer={"$15 - $25"} />,
-                <AnswerBox answer={"+$30"} />
         ],
     },
     {
