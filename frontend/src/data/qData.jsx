@@ -69,7 +69,8 @@ export const qData = [
                 <AnswerBox answer={"Late Night"} nextQuestion={"GEN Question 5"} tags={["late-night"]}/>
 
         ],
-    }
+    },
+    {
         "id": "GEN Question 5",
         "Q": "Cuisine in mind?",
         "type": "Multi",
