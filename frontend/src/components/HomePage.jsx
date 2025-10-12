@@ -5,7 +5,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
-      <div>
+      <div className="page-bg">
         <header>
           <div className="roundedBox header1">
             <h1>Welcome to Food Finder</h1>
@@ -22,7 +22,7 @@ const HomePage = () => {
           </div>
         </main>
         <Link to="/Find">
-          <button>
+          <button style={{ color: 'black', backgroundColor: 'lightblue', borderRadius: '10px', padding: '10px', fontSize: '20px', cursor: 'pointer' }}>
             Start Search!
           </button>
         </Link>
