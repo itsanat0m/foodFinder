@@ -75,10 +75,14 @@ export const qData = [
         "Q": "Cuisine in mind?",
         "type": "Multi",
         "Answers": [
-                <AnswerBox answer={"Brunch"} nextQuestion={"GEN Question 6"}/>,
-                <AnswerBox answer={""} />,
-                <AnswerBox answer={""} />,
-                <AnswerBox answer={"I don't know"} />,
+                <AnswerBox answer={"American"} nextQuestion={"GEN Question 6"} tags={["american"]}/>,
+                <AnswerBox answer={"Italian"} nextQuestion={"GEN Question 6"} tags={["european"]}/>,
+                <AnswerBox answer={"Latin"} nextQuestion={"GEN Question 6"} tags={["latin"]}/>,
+                <AnswerBox answer={"Mediterranean"} nextQuestion={"GEN Question 6"} tags={["med-deli"]}/>,
+                <AnswerBox answer={"Chinese"} nextQuestion={"GEN Question 6"} tags={["asian"]}/>,
+                <AnswerBox answer={"Indonesian"} nextQuestion={"GEN Question 6"} tags={["asian"]}/>,
+                <AnswerBox answer={"Fusion"} nextQuestion={"GEN Question 6"} tags={["asian", "american", "european", "latin","med-deli"]}/>,
+                <AnswerBox answer={"I don't know"} tag={[]}/>,
 
         ],
     },
@@ -88,23 +92,23 @@ export const qData = [
         "Q": "What flavors are you looking for?",
         "type": "Multi",
         "Answers": [
-                <AnswerBox answer={"Sweet"} nextQuestion={"GEN Question 6"} tags={["sweet"]}/>,
-                <AnswerBox answer={"Savory"} nextQuestion={"GEN Question 6"} tags={["savory"]}/>,
-                <AnswerBox answer={"Sour"} nextQuestion={"GEN Question 6"} tags={["sour"]}/>,
-                <AnswerBox answer={"Tangy"} nextQuestion={"GEN Question 6"} tags={["tangy"]}/>,
-                <AnswerBox answer={"Salty"} nextQuestion={"GEN Question 6"} tags={["salty"]}/>,
-                <AnswerBox answer={"Bitter"} nextQuestion={"GEN Question 6"} tags={["bitter"]}/>,
-                <AnswerBox answer={"Spicy"} nextQuestion={"GEN Question 6"} tags={["spicy"]}/>,
-                <AnswerBox answer={"Rich"} nextQuestion={"GEN Question 6"} tags={["rich"]}/>,
-                <AnswerBox answer={"Earthy"} nextQuestion={"GEN Question 6"} tags={["earthy"]}/>,
-                <AnswerBox answer={"Fruity"} nextQuestion={"GEN Question 6"} tags={["fruity"]}/>,
-                <AnswerBox answer={"Smoky"} nextQuestion={"GEN Question 6"} tags={["smoky"]}/>,
-                <AnswerBox answer={"Other/None"} nextQuestion={"GEN Question 6"} tags={[]}/>,
+                <AnswerBox answer={"Sweet"} nextQuestion={"GEN Question 7"} tags={["sweet"]}/>,
+                <AnswerBox answer={"Savory"} nextQuestion={"GEN Question 7"} tags={["savory"]}/>,
+                <AnswerBox answer={"Sour"} nextQuestion={"GEN Question 7"} tags={["sour"]}/>,
+                <AnswerBox answer={"Tangy"} nextQuestion={"GEN Question 7"} tags={["tangy"]}/>,
+                <AnswerBox answer={"Salty"} nextQuestion={"GEN Question 7"} tags={["salty"]}/>,
+                <AnswerBox answer={"Bitter"} nextQuestion={"GEN Question 7"} tags={["bitter"]}/>,
+                <AnswerBox answer={"Spicy"} nextQuestion={"GEN Question 7"} tags={["spicy"]}/>,
+                <AnswerBox answer={"Rich"} nextQuestion={"GEN Question 7"} tags={["rich"]}/>,
+                <AnswerBox answer={"Earthy"} nextQuestion={"GEN Question 7"} tags={["earthy"]}/>,
+                <AnswerBox answer={"Fruity"} nextQuestion={"GEN Question 7"} tags={["fruity"]}/>,
+                <AnswerBox answer={"Smoky"} nextQuestion={"GEN Question 7"} tags={["smoky"]}/>,
+                <AnswerBox answer={"Other/None"} nextQuestion={"GEN Question 7"} tags={[]}/>,
         ],
     },
     {
 
-        "id": "GEN Question 6",
+        "id": "GEN Question 7",
         "Q": "What foods are you looking for?",
         "type": "Multi",
         "Answers": [
@@ -122,6 +126,21 @@ export const qData = [
                 <AnswerBox answer={"Pizza"} nextQuestion={"GEN Question 6"} tags={["pizza"]}/>,
         ],
     },
+    {
+        "id" : "GEN Question 8",
+        "Q" : "What type of dining experience are you looking for?",
+        "type" : "Multi",
+        "Answers" : [
+                <AnswerBox answer={"Dine in"} nextQuestion={"Send to display"} tags={["sit-down"]}/>,
+                <AnswerBox answer={"Take out"} nextQuestion={"Send to display"} tags={["to-go"]}/>,
+                <AnswerBox answer={"Bar"} nextQuestion={"Send to display"} tags={["bar"]}/>,
+                <AnswerBox answer={"Drive Through"} nextQuestion={"Send to display"} tags={["to-go"]}/>,
+                <AnswerBox answer={"Fast Food"} nextQuestion={"Send to display"} tags={["sit-down"]}/>,
+                <AnswerBox answer={"Cafe"} nextQuestion={"Send to display"} tags={["sit-down"]}/>,
+                <AnswerBox answer={"Buffet"} nextQuestion={"Send to display"} tags={["sit-down"]}/>,
+                <AnswerBox answer={"Food Truck"} nextQuestion={"Send to display"} tags={["to-go"]}/>,
+            ]
+    }
 ]
 
 export default qData;
