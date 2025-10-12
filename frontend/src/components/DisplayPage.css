@@ -1,0 +1,81 @@
+/* Question layout */
+.question {
+    margin: 1.25rem 0 2rem;
+}
+
+.question__title {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 700;
+}
+
+/* Answers grid */
+.question__answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Answer buttons */
+.answer-btn {
+    appearance: none;
+    border: 2px solid #1d4e89;
+    /* Carolina-ish dark blue edge */
+    background: #e6f1fa;
+    /* subtle blue */
+    color: #0d2b4a;
+    padding: 0.6rem 0.9rem;
+    border-radius: 9999px;
+    /* pill */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.answer-btn:hover {
+    background: #d7e9f7;
+}
+
+.answer-btn:active {
+    transform: translateY(1px);
+}
+
+.answer-btn:focus-visible {
+    outline: 3px solid #4b9cd3;
+    /* focus ring */
+    outline-offset: 2px;
+}
+
+.answer-btn.is-selected {
+    background: #4b9cd3;
+    /* Carolina blue */
+    color: white;
+    border-color: #4b9cd3;
+    box-shadow: 0 0 0 3px #b3d8f0 inset;
+    /* soft inner glow */
+}
+
+/* Generic buttons (e.g., Start Search) */
+.btn {
+    appearance: none;
+    border: 2px solid #0d2b4a;
+    background: white;
+    color: #0d2b4a;
+    padding: 0.7rem 1.1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f3f7fb;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn--primary {
+    background: #4b9cd3;
+    border-color: #4b9cd3;
+    color: #fff;
+}

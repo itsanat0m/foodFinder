@@ -16,12 +16,18 @@ function Question({ question, answers, passA, passAM, type }) {
         passA([], num);
     }
 
-    if(type == "Multi") {
+    if (type == "Multi") {
         return (
             <>
-                <h1>{question}</h1>
+                <h1 style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '0.5rem',
+                    marginBottom: '1rem'
+                }}>
+                    {question}</h1>
                 <div>
-                    {answers.map(answer => cloneElement(answer, {handleMultiData}) ) 
+                    {answers.map(answer => cloneElement(answer, { handleMultiData }))
                     }
                 </div>
                 <button onClick={handleClick}>Submit</button>
@@ -29,12 +35,12 @@ function Question({ question, answers, passA, passAM, type }) {
         );
     }
     return (
-    <>
-        <h1>{question}</h1>
-        <div>
-            {answers.map(answer => cloneElement(answer, {handleData}) )}
-        </div>
-    </>
+        <>
+            <h1>{question}</h1>
+            <div>
+                {answers.map(answer => cloneElement(answer, { handleData }))}
+            </div>
+        </>
     );
 
 }
