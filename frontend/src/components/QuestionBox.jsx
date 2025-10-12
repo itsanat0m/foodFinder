@@ -20,6 +20,9 @@ function QuestionBox() {
                 state: { tags: userTags }
             });
         }
+        if (num == "try again") {
+            navigate('/');
+        }
     }
 
     function handleMultiChange(tags) {
