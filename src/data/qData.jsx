@@ -105,7 +105,7 @@ export const qData = [
                 <AnswerBox answer={"Steak"} nextQuestion={"GEN Question 8"} tags={["steak"]}/>,
                 <AnswerBox answer={"Sushi"} nextQuestion={"GEN Question 8"} tags={["sushi"]}/>,
                 <AnswerBox answer={"Salad"} nextQuestion={"GEN Question 8"} tags={["salad"]}/>,
-                <AnswerBox answer={"Bisctuits"} nextQuestion={"GEN Question 8"} tags={["biscuits"]}/>,
+                <AnswerBox answer={"Biscuit"} nextQuestion={"GEN Question 8"} tags={["biscuits"]}/>,
                 <AnswerBox answer={"Bagel"} nextQuestion={"GEN Question 8"} tags={["bagel"]}/>,
                 <AnswerBox answer={"Seafood"} nextQuestion={"GEN Question 8"} tags={["seafood"]}/>,
                 <AnswerBox answer={"Pasta"} nextQuestion={"GEN Question 8"} tags={["pasta"]}/>,
