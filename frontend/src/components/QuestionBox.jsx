@@ -13,6 +13,8 @@ function QuestionBox() {
     function handleChange(tags, num) {
         setQNum(num);
         setUserTags(prevTags => [...prevTags, ...tags]);
+
+        console.log(userTags)
         if (num == "Send to display") {
             navigate('/display', {
                 state: { tags: userTags }
