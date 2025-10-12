@@ -6,10 +6,10 @@ export const qData = [
         "Q": "Who's eating?",
         "Answers": [
                 <AnswerBox answer={"Just Me"} nextQuestion={"Send to display"} tags={["burger"]} />,
-                <AnswerBox answer={"Friends"} nextQuestion={3} tags={[]} />,
-                <AnswerBox answer={"Family"}  nextQuestion={3} tags={[]} />,
-                <AnswerBox answer={"Couple"}  nextQuestion={2} tags={[]} />,
-                <AnswerBox answer={"Other"}  nextQuestion={3} tags={[]} />,
+                <AnswerBox answer={"Friends"} nextQuestion={"GEN Question 2"} tags={[]} />,
+                <AnswerBox answer={"Family"}  nextQuestion={"GEN Question 2"} tags={[]} />,
+                <AnswerBox answer={"Couple"}  nextQuestion={"COUPLE Question 1 (2)"} tags={[]} />,
+                <AnswerBox answer={"Other"}  nextQuestion={"GEN Question 2"} tags={[]} />,
 
         ],
     },
@@ -18,7 +18,7 @@ export const qData = [
         "id": "COUPLE Question 1 (2)",
         "Q": "You must promise to go where I say",
         "Answers": [
-                <AnswerBox answer={"I promise"} nextQuestion={2} />,
+                <AnswerBox answer={"I promise"} nextQuestion={"GEN Question 2"} />,
                 <AnswerBox answer={"Mmm can't say for sure"} />,
         ],
     },
@@ -27,10 +27,10 @@ export const qData = [
         "id": "GEN Question 2", // Budget question needs implement a tag, 
         "Q": "Budget per person?",
         "Answers": [
-                <AnswerBox answer={"<$10"} nextQuestion={2}  />,
-                <AnswerBox answer={"$10 - $15"} />,
-                <AnswerBox answer={"$15 - $25"} />,
-                <AnswerBox answer={"+$30"} />
+                <AnswerBox answer={"<$10"} nextQuestion={"GEN Question 3"}  />,
+                <AnswerBox answer={"$10 - $15"} nextQuestion={"GEN Question 3"}/>,
+                <AnswerBox answer={"$15 - $25"} nextQuestion={"GEN Question 3"}/>,
+                <AnswerBox answer={"+$30"} nextQuestion={"GEN Question 3"}/>
         ],
     },
     {
@@ -38,10 +38,10 @@ export const qData = [
         "id": "GEN Question 3", // Meal question needs implement a tag,
         "Q": "Which meal do you want?",
         "Answers": [
-                <AnswerBox answer={"Breakfast"} />,
-                <AnswerBox answer={"Lunch"} />,
-                <AnswerBox answer={"Dinner"} />,
-                <AnswerBox answer={"Late Night"} />
+                <AnswerBox answer={"Breakfast"} nextQuestion={"BREAK Question 1"}/>,
+                <AnswerBox answer={"Lunch"} nextQuestion={"GEN Question 4"}/>,
+                <AnswerBox answer={"Dinner"} nextQuestion={"GEN Question 4"}/>,
+                <AnswerBox answer={"Late Night"} nextQuestion={"GEN Question 4"}/>
 
         ],
     },
@@ -50,8 +50,8 @@ export const qData = [
         "id": "GEN Question 4",
         "Q": "Distance willing to travel?",
         "Answers": [
-                <AnswerBox answer={"Walking only (<10 minutes)"} />,
-                <AnswerBox answer={"Lunch"} />,
+                <AnswerBox answer={"Walking only (<2 miles)"} />,
+                <AnswerBox answer={"Driving"} />,
                 <AnswerBox answer={"Dinner"} />,
                 <AnswerBox answer={"Late Night"} />,
         ],
