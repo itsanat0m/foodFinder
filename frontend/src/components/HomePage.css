@@ -1,5 +1,5 @@
 /* homepage.css */
-.homepage {
+:root {
     /* CSS variables or page-wide tokens */
     --hero-max: 1200px;
     --carolina: #4b9cd3;
@@ -17,7 +17,6 @@
     border-radius: 30px;
     padding: 15px;
     margin: 20px;
-    background-color: var(--carolina);
     box-shadow: 5px 10px #888888;
 }
 
@@ -30,30 +29,47 @@
 }
 
 .ramContainer {
+    position: relative;
+    justify-content: center;
     display: flex;
     align-items: center;
+    min-height: 360px;
+}
+
+.ram-wrapper {
+    display: flex;
     justify-content: center;
 }
 
 .speech-bubble {
-    position: relative;
-    background: #7eb3df;
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    transform: translateX(-120%);
+    background-color: #7eb3df;
+    color: #000;
     padding: 1rem 1.75rem;
-    border-radius: 50px;
-    width: fit-content;
+    border-radius: 9999px;
     max-width: 400px;
-    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    opacity: .8;
+}
+
+.speech-bubble p {
+    font-family: 'Fredoka One', cursive;
 }
 
 .speech-bubble::after {
     content: "";
     position: absolute;
-    bottom: -20px;
-    /* position under the bubble */
-    left: 40px;
-    /* adjust to point where you want */
-    border-width: 20px 20px 0;
+    top: 80%;
+    right: -1px;
+    rotate: 30deg;
+    /* place tail on the right side, pointing to Ram */
+    transform: translateY(-50%);
+    border-width: 15px 0 15px 30px;
     border-style: solid;
-    border-color: white transparent transparent transparent;
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.1));
+    border-color: transparent transparent transparent #7eb3df;
+    /* match bubble */
+
 }
