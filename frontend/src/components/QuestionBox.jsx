@@ -14,11 +14,13 @@ function QuestionBox() {
         setQNum(num);
         setUserTags(prevTags => [...prevTags, ...tags]);
 
-        console.log(userTags)
         if (num == "Send to display") {
             navigate('/display', {
                 state: { tags: userTags }
             });
+        }
+        if (num == "try again") {
+            navigate('/');
         }
     }
 
@@ -28,7 +30,7 @@ function QuestionBox() {
 
     return (
         <>
-        <Question question={selectedQ.Q} answers={selectedQ.Answers} passA={handleChange} passAM={handleMultiChange} type={selectedQ.Type}/>
+        <Question question={selectedQ.Q} answers={selectedQ.Answers} passA={handleChange} passAM={handleMultiChange} type={selectedQ.type}/>
         </>
     )
 }
