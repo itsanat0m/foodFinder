@@ -16,15 +16,16 @@ const HomePage = () => {
             <div className="speech-bubble">
               <p>Don't know where to eat? Chef Rami has got you covered</p>
             </div>
-            <img className="default-ram" src="assets/ramChef.png" alt="Chef Rami" >
-            </img>
+            <div className="ram-wrapper">
+              <img className="default-ram" src="assets/ramChef.png" alt="Chef Rami" ></img>
+            </div>
           </div>
         </main>
-          <Link to="/find">
-            <button>
-              Start Search!
-            </button>
-          </Link>
+        <Link to="/find">
+          <button>
+            Start Search!
+          </button>
+        </Link>
       </div>
     </>
   );
