@@ -20,8 +20,8 @@ export const qData = [
         "Q": "You must promise to go where I say",
         "type": "single",
         "Answers": [
-                <AnswerBox answer={"I promise"} nextQuestion={"MULT Question 2"} />,
-                <AnswerBox answer={"Mmm can't say for sure"} nextQuestion={"MULT Question 2"}/>,
+                <AnswerBox answer={"I promise"} nextQuestion={"GEN Question 2"} tags={[""]}/>,
+                <AnswerBox answer={"Mmm can't say for sure"} nextQuestion={"try again"} tags={[""]}/>,
         ],
     },
     {
@@ -42,38 +42,34 @@ export const qData = [
         "Q": "Budget per person?",
         "type": "single",
         "Answers": [
-                <AnswerBox answer={"<$10"} nextQuestion={"GEN Question 3"} tags={["<10"]}  />,
-                <AnswerBox answer={"$10 - $15"} />,
-                <AnswerBox answer={"$15 - $25"} />,
-                <AnswerBox answer={"+$30"} />
+                <AnswerBox answer={"<$10"} nextQuestion={"GEN Question 3"}  tags={["cheap"]}/>,
+                <AnswerBox answer={"$10 - $15"} nextQuestion={"GEN Question 3"} tags={["econmical"]}/>,
+                <AnswerBox answer={"$15 - $25"} nextQuestion={"GEN Question 3"} tags={["mid-range"]}/>,
+                <AnswerBox answer={"+$30"} nextQuestion={"GEN Question 3"} tags={["expensive"]}/>
+        ],
+    },
+    {
+
+        "id": "GEN Question 3",
+        "Q": "Distance willing to travel?",
+        "type": "single",
+        "Answers": [
+                <AnswerBox answer={"Walking only (<2 miles)"} nextQuestion={"GEN Question 4"} tags={["close"]}/>,
+                <AnswerBox answer={"Driving (>2 miles)"} nextQuestion={"GEN Question 4"} tags={["far"]}/>,
         ],
     },
     {
         //TODO: Figure out how we want to do Timing with opening hours
-        "id": "GEN Question 3", // Meal question needs implement a tag,
+        "id": "GEN Question 4", // Meal question needs implement a tag,
         "Q": "Which meal do you want?",
-        "type": "single",
         "Answers": [
-                <AnswerBox answer={"Breakfast"} nextQuestion={"GEN Question 4"}/>,
-                <AnswerBox answer={"Lunch"} />,
-                <AnswerBox answer={"Dinner"} />,
-                <AnswerBox answer={"Late Night"} />
+                <AnswerBox answer={"Breakfast"} nextQuestion={"GEN Question 5"} tags={["breakfast"]}/>,
+                <AnswerBox answer={"Lunch"} nextQuestion={"GEN Question 5"} tags={["lunch"]}/>,
+                <AnswerBox answer={"Dinner"} nextQuestion={"GEN Question 5"} tags={["dinner"]}/>,
+                <AnswerBox answer={"Late Night"} nextQuestion={"GEN Question 5"} tags={["late-night"]}/>
 
         ],
-    },
-    {
-
-        "id": "GEN Question 4",
-        "Q": "Distance willing to travel?",
-        "type": "single",
-        "Answers": [
-                <AnswerBox answer={"Walking only (<10 minutes)"} nextQuestion={"GEN Question 5"}/>,
-                <AnswerBox answer={"Lunch"} />,
-                <AnswerBox answer={"Dinner"} />,
-                <AnswerBox answer={"Late Night"} />,
-        ],
-    },
-    {
+    }
         "id": "GEN Question 5",
         "Q": "Cuisine in mind?",
         "type": "Multi",
