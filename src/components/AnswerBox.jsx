@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import './AnswerBox.css';
 
-function AnswerBox({ answer, nextQuestion, tags, handleData }) {
+function AnswerBox({ answer, nextQuestion, tags, handleData, handleMultiData, type }) {
 
     const handleClick = () => {
-        handleData(nextQuestion, tags);
+        if (type == "Multi") {
+            handleMultiData(nextQuestion, tags)
+        } else {
+            handleData(nextQuestion, tags);
+        }
     }
 
     return (

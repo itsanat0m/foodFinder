@@ -28,7 +28,7 @@ function Question({ question, answers, passA, passAM, type }) {
                     {question}</h1>
                     <p>(Select multiple and then hit submit!)</p>
                 <div>
-                    {answers.map(answer => cloneElement(answer, { handleMultiData }))
+                    {answers.map(answer => cloneElement(answer, { handleData, handleMultiData, type }))
                     }
                 </div>
                 <button onClick={handleClick}>Submit</button>
@@ -39,7 +39,7 @@ function Question({ question, answers, passA, passAM, type }) {
         <>
             <h1>{question}</h1>
             <div>
-                {answers.map(answer => cloneElement(answer, { handleData }))}
+                {answers.map(answer => cloneElement(answer, { handleData, handleMultiData, type }))}
             </div>
         </>
     );
