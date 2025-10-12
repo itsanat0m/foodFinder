@@ -14,6 +14,9 @@ function AnswerBox({ answer, nextQuestion, tags, handleData }) {
                     {answer}
                 </button>
             </div>
+            <div className="ram-wrapper">
+                <img className="default-ram" src="assets/ramChef.png" alt="Chef Rami" ></img>
+            </div>
         </div>
     );
 }
