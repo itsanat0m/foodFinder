@@ -26,6 +26,7 @@ function Question({ question, answers, passA, passAM, type }) {
                     marginBottom: '1rem'
                 }}>
                     {question}</h1>
+                    <p>(Select multiple and then hit submit!)</p>
                 <div>
                     {answers.map(answer => cloneElement(answer, { handleMultiData }))
                     }
