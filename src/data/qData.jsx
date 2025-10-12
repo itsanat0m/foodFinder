@@ -67,7 +67,7 @@ export const qData = [
                 <AnswerBox answer={"Italian"} nextQuestion={"GEN Question 6"} tags={["european"]}/>,
                 <AnswerBox answer={"Latin"} nextQuestion={"GEN Question 6"} tags={["latin"]}/>,
                 <AnswerBox answer={"Mediterranean"} nextQuestion={"GEN Question 6"} tags={["med-deli"]}/>,
-                <AnswerBox answer={"Chinese"} nextQuestion={"GEN Question 6"} tags={["asian"]}/>,
+                <AnswerBox answer={"Asian"} nextQuestion={"GEN Question 6"} tags={["asian"]}/>,
                 <AnswerBox answer={"Indonesian"} nextQuestion={"GEN Question 6"} tags={["asian"]}/>,
                 <AnswerBox answer={"Fusion"} nextQuestion={"GEN Question 6"} tags={["asian", "american", "european", "latin","med-deli"]}/>,
                 <AnswerBox answer={"I don't know"} tag={[]}/>,

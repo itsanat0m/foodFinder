@@ -38,6 +38,9 @@ function Question({ question, answers, passA, passAM, type }) {
     return (
         <>
             <h1>{question}</h1>
+            <div className="ram-wrapper">
+              <img className="default-ram" src="assets/ramChef.png" alt="Chef Rami" ></img>
+            </div>
             <div>
                 {answers.map(answer => cloneElement(answer, { handleData, handleMultiData, type }))}
             </div>

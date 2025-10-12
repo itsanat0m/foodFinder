@@ -34,7 +34,7 @@ function DisplayPage() {
     return (
         <>
             <h1>
-                Your best coice is...
+                Your best choice is...
             </h1>
             {place ? (
                 <div>
