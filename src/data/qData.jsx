@@ -6,11 +6,11 @@ export const qData = [
         "Q": "Who's eating?",
         "type": "single",
         "Answers": [
-                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 2"} tags={["single"]} />,
-                <AnswerBox answer={"Friends"} nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
-                <AnswerBox answer={"Family"}  nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Just Me"} nextQuestion={"GEN Question 3"} tags={["single"]} />,
+                <AnswerBox answer={"Friends"} nextQuestion={"MULT Question 2"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Family"}  nextQuestion={"MULT Question 2"} tags={["multi-person"]} />,
                 <AnswerBox answer={"Couple"}  nextQuestion={"COUPLE Question 1"} tags={["multi-person"]} />,
-                <AnswerBox answer={"Other"}  nextQuestion={"GEN Question 2"} tags={["multi-person"]} />,
+                <AnswerBox answer={"Other"}  nextQuestion={"MULT Question 2"} tags={["multi-person"]} />,
 
         ],
     },
@@ -20,7 +20,7 @@ export const qData = [
         "Q": "You must promise to go where I say",
         "type": "single",
         "Answers": [
-                <AnswerBox answer={"I promise"} nextQuestion={"GEN Question 2"} tags={[""]}/>,
+                <AnswerBox answer={"I promise"} nextQuestion={"MULT Question 2"} tags={[""]}/>,
                 <AnswerBox answer={"Mmm can't say for sure"} nextQuestion={"try again"} tags={[""]}/>,
         ],
     },
